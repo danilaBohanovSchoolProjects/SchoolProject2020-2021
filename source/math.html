@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Math</title>
+    <link rel="preload" href="css/style.min.css" as="style">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+    <header class="page-header">
+      <h1 class="page-header__info">Инфодоска</h1>
+      <a class="page-header__link" href="index.html">На главную</a>
+    </header>
+    <main class="page-main">
+      <section class="page-main__form-section form-section">
+        <h2 class="form-section__title">Форма отправки</h2>
+        <form class="form-section" action="https://echo.htmlacademy.ru" method="post" enctype="multipart/form-data" autocomplete="off">
+          <input type="file" id="photo" name="photo" class="form-section__image-input" accept="image/png, image/jpeg">
+          <label class="form-section__label" for="photo">Загрузите фотографию</label>
+          <input type="text" id="text" name="text" class="form-section__text-input">
+          <label class="form-section__label" for="photo">Введите текст</label>
+          <button type="submit">
+            <span class="vissually-hiddeb">
+              Отправить форму
+            </span>
+          </button>
+        </form>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <a class="page-footer__link" href="index.html">На главную</a>
+      <ul class="page-footer__social-networks-list social-networks-list">
+        <li class="social-networks-list__item">
+          <a class="social-networks-list__link" href="#">Гитхаб</a>
+        </li>
+        <li class="social-networks-list__item">
+          <a class="social-networks-list__link" href="#">Почта</a>
+        </li>
+      </ul>
+      <p class="page-footer__developer">Данила Боханов</p>
+    </footer>
+  </body>
+</html>

@@ -3,19 +3,56 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ифно-докса</title>
+    <title>Info board</title>
     <link rel="preload" href="css/style.min.css" as="style">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-    <header>
-
+    <header class="page-header">
+      <h1 class="page-header__info">Инфодоска</h1>
+      <a class="page-header__link">На главную</a>
     </header>
     <main class="page-main">
-      <h1 class="page-main__title">Test</h1>
+      <section class="page-main__subjects subjects">
+        <h2 class="subjects__title">Предметы</h2>
+        <ul class="subjects__list subjects-list">
+          <li class="subjects-list__item">
+            <a class="subjects-list__link" href="math.html">
+              <img src="" alt="Математика">
+            </a>
+          </li>
+          <li class="subjects-list__item">
+            <a class="subjects-list__link" href="#">
+              <img src="" alt="Информатика">
+            </a>
+          </li>
+          <li class="subjects-list__item">
+            <a class="subjects-list__link" href="#">
+              <img src="" alt="Русский язык">
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="page-main__description description">
+        <h2 class="description__title">Как пользоваться</h2>
+        <p class="description__text">
+          Кликните на изображение нужного вам предмета.
+          По данной ссылке вас перенесёт на страницу,
+          где можно будет разместить комментарий или изображение к соответсвующему предмету.
+        </p>
+      </section>
     </main>
-    <footer>
-
+    <footer class="page-footer">
+      <a class="page-footer__link">На главную</a>
+      <ul class="page-footer__social-networks-list social-networks-list">
+        <li class="social-networks-list__item">
+          <a class="social-networks-list__link" href="#">Гитхаб</a>
+        </li>
+        <li class="social-networks-list__item">
+          <a class="social-networks-list__link" href="#">Почта</a>
+        </li>
+      </ul>
+      <p class="page-footer__developer">Данила Боханов</p>
     </footer>
   </body>
 </html>
