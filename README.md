@@ -1,6 +1,6 @@
 # SchoolProject2020-2021
 
-* Разработчик: [Данила Боханов](https://github.com/danilaBohanovSchoolProjects).
+* Ученик: [Данила Боханов](https://github.com/danilaBohanovSchoolProjects).
 * Учитель: [Голубев Олег Геннадьевич](https://sch1329.mskobr.ru/teacher-card/golubev_oleg_gennad_evich).
 
 ---
