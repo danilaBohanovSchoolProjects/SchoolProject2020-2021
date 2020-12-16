@@ -9,8 +9,19 @@
   </head>
   <body>
     <header class="page-header">
-      <h1 class="page-header__info">Инфодоска</h1>
-      <a class="page-header__link">На главную</a>
+      <div class="container page-header__inner">
+        <h1 class="page-header__info visually-hidden">
+          Сайт Инфодоска
+        </h1>
+        <a href="index.html" class="page-header-logo">
+          <img src="img/logo-header.svg" alt="Логотип сайта" width="320" height="66">
+        </a>
+        <a class="page-header__guide-link" href="index.html#guide">
+          <span class="visually-hidden">
+            Руководство по использованию 
+          </span>
+        </a>
+      </div>
     </header>
     <main class="page-main">
       <section class="page-main__subjects subjects">
@@ -34,8 +45,8 @@
         </ul>
       </section>
       <section class="page-main__description description">
-        <h2 class="description__title">Как пользоваться</h2>
-        <p class="description__text">
+        <h2 class="description__title">Руководство по использованию</h2>
+        <p class="description__text" id="guide">
           Кликните на изображение нужного вам предмета.
           По данной ссылке вас перенесёт на страницу,
           где можно будет разместить комментарий или изображение к соответсвующему предмету.
