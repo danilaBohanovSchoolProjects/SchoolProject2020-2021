@@ -1,7 +1,5 @@
 .page-header {
-  position: relative;
-
-  padding-top: 20px;
+  padding: 0;
 
   .line-size(14px, 17px);
   color: @header-font;
@@ -12,14 +10,10 @@
   background-repeat: repeat;
 
   @media (min-width: @tablet-width) {
-    padding-top: 25px;
-
     .line-size(16px, 19px);
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 30px;
-
     .line-size(18px, 21px);
   }
 
@@ -31,6 +25,38 @@
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 59px;
+
+    @media (min-width: @tablet-width) {
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-top: 30px;
+    }
+  }
+
+  img {
+    display: block;
+
+    opacity: 1;
+
+    &:hover,
+    &:focus {
+      background-color: @logo-header-hover;
+      box-shadow: 0 0 50px @footer-text;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+
+    @media (min-width: @tablet-width) {
+      width: 480px;
+      height: 99px;
+    }
   }
 
   &__info {
@@ -42,19 +68,38 @@
   }
 
   &__guide-link {
-    position: relative;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
 
     display: block;
-    width: 40px;
-    height: 37px;
+    width: 52px;
+    height: 43px;
+
+    @media (min-width: @tablet-width) {
+      top: 50%;
+      right: 50px;
+      left: auto;
+      transform: translateY(-50%);
+
+      width: 78px;
+      height: 65px;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: @logo-header-hover;
+      box-shadow: 0 0 50px @footer-text;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
 
     &::after {
       content: "";
 
-      position: absolute;
-      top: 0;
-      left: 0;
-      
       display: block;
       width: 100%;
       height: 100%;
