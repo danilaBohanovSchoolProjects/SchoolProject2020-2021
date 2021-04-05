@@ -1,5 +1,21 @@
 .page-main {
   &--bg {
     background-color: @subjects-bg;
+    background-image: url("../../img/subjects-bg.jpg");
+    background-position: 0 0;
+    background-repeat: repeat;
+  }
+
+  &__title {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    .line-size(40px, 45px);
+
+    color: @footer-text;
+
+    @media (min-width: @tablet-width) {
+      .line-size(50px, 70px);
+    }
   }
 }
