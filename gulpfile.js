@@ -12,7 +12,7 @@ var toWebp = require("gulp-webp");
 var svgstore = require("gulp-svgstore");
 var del = require("del");
 var htmlmin = require("gulp-htmlmin");
-var uglify = require("gulp-uglify");
+var uglify = require("gulp-uglify-es").default;
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 
@@ -54,7 +54,7 @@ exports.html = html;
 //scripts
 
 const scripts = () => {
-  return gulp.src("source/js/*.js")
+  return gulp.src("bundle.js")
     .pipe(uglify())
     .pipe(rename("scripts.min.js"))
     .pipe(gulp.dest("build/js"));
@@ -95,7 +95,7 @@ exports.sprite = sprite;
 const watcher = () => {
   gulp.watch("source/less/**/*.less", gulp.series("styles"));
   gulp.watch("source/*.html", gulp.series("html")).on("change", sync.reload);
-  gulp.watch("source/js/*.js", gulp.series("scripts"));
+  gulp.watch("bundle.js", gulp.series("scripts"));
   gulp.watch("source/img/icon-*.svg", gulp.series("sprite"));
 }
 

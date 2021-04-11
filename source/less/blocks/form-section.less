@@ -6,6 +6,39 @@
     width: 800px;
     max-width: 100%;
     min-height: 200px;
+    margin-bottom: 10px;
     padding: 20px;
+
+    color: @result;
+
+    background-color: @text-input-bg;
+    border: 3px solid @result;
+    border-radius: 25px;
+
+    &::placeholder {
+      color: @result;
+    }
+  }
+
+  &__sumbit {
+    box-sizing: border-box;
+    width: 300px;
+    margin-bottom: 20px;
+    padding: 20px;
+
+    .line-size(20px, 20px);
+    font-weight: bold;
+
+    box-shadow: -7px -15px 37px 5px @subject-border inset;
+    border-radius: 20px;
+
+    &:hover,
+    &:focus {
+      box-shadow: -7px -15px 37px 5px @footer-text inset;
+    }
+
+    &:active {
+      box-shadow: -7px 10px 37px 5px @subject-border inset;
+    }
   }
 }
