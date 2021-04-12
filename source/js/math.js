@@ -27,8 +27,16 @@ let runner = async () => {
   for (let key in data) {
     const resListItem = document.createElement('li');
     resListItem.classList.add('result__list-item');
-    console.log(key);
     resListItem.textContent = data[key];
+
+    const delButton = document.createElement('button');
+    delButton.classList.add('result__del-button');
+    const span = document.createElement('span');
+    span.classList.add('visually-hidden');
+    span.textContent = "Удалить комметарий";
+    delButton.appendChild(span);
+    resListItem.appendChild(delButton);
+
     resList.appendChild(resListItem);
     isEmpty = false;
     cnt++;

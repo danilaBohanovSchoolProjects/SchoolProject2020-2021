@@ -44,6 +44,8 @@
   }
 
   &__list-item {
+    position: relative;
+
     min-height: 150px;
     padding: 10px;
     .line-size(23px, 27px);
@@ -61,6 +63,48 @@
 
     &--loading {
       background-color: @subjects-inner-bg;
+    }
+  }
+
+  &__del-button {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+
+    width: 35px;
+    height: 35px;
+
+    background-color: @subject-border;
+
+    &:hover,
+    &:focus {
+      background-color: @description-text;
+    }
+
+    &:active {
+      background-color: @del-button-hover;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 15px;
+      left: 1px;
+      
+      width: 30px;
+      height: 3px;
+
+      background-color: @description-bg;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(135deg);
     }
   }
 }
