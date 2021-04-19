@@ -2,7 +2,7 @@ const path = require("path");
 
 module.exports = {
   entry: [
-    "./source/js/math.js"
+    "./source/js/script.js"
   ],
   output: {
     filename: "bundle.js",
