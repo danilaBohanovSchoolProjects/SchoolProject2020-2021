@@ -22,7 +22,7 @@
 
   &__sumbit {
     box-sizing: border-box;
-    width: 300px;
+    width: 100%;
     margin-bottom: 20px;
     padding: 20px;
 
@@ -40,6 +40,10 @@
 
     &:active {
       box-shadow: -7px 10px 37px 5px @subject-border inset;
+    }
+
+    @media (min-width: @tablet-width) {
+      width: 300px;
     }
   }
 }
