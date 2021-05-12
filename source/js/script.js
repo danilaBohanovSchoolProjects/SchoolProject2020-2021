@@ -11,33 +11,33 @@ let runner = async () => {
   console.log(title.textContent);
   if (title.textContent == "Math") {
     db = easydb({
-      database: '6a5990d2-560c-4183-9438-48461d20f0c1',
-      token: 'fa0650dc-2b7c-423f-8fde-f6f3df13270e'
+      database: '734cd7b1-797b-4fc4-80d8-dd4c3eca45c5',
+      token: '2c656d4e-738c-4476-8572-df422a912a53'
     })
   } else if (title.textContent == "Informatics") {
     db = easydb({
-      database: '23186ee9-9aae-45fc-8735-a4238178d5ea',
-      token: '3775a4e9-74ee-44f0-be70-b66700be2997'
+      database: '298ea123-2381-48a8-99da-6b997ee2c464',
+      token: '493d7b5e-c33c-4aec-9921-2cadba466d07'
     })
   } else if (title.textContent == "Russian") {
     db = easydb({
-      database: '714f0c7a-9c05-4ddf-a379-0996c6781c47',
-      token: 'fe007134-7023-47bd-b3ec-c5f85b5facd9'
+      database: 'fd0af936-9546-4fa9-a69c-49ef2f0b2474',
+      token: '69dc25b9-a06e-4dab-80d8-dad642fbab1a'
     })
   } else if (title.textContent == "Literature") {
     db = easydb({
-      database: 'd25dc6f9-46cd-465b-acd6-25e4463f95dd',
-      token: '565fa569-3d2a-4325-9677-9ef7824dba47'
+      database: 'e4cdeab0-366c-44fa-809a-84427078f2ef',
+      token: '3713b2b5-d49c-442f-a7d5-209390844ed9'
     })
-  } else if (title.textContent == "English") {
+  } else if (title.textContent == "Class") {
     db = easydb({
-      database: '938fdf53-111d-4fe2-b8f8-d9ee34eb85ee',
-      token: 'f22c6049-2991-40b0-bb71-598fb4f4669f'
+      database: '0ffc6c34-6f4a-4b57-931b-f09191cc8a88',
+      token: '39cff467-a6d0-4596-ac40-0bd54e70e975'
     })
   } else if (title.textContent == "History") {
     db = easydb({
-      database: 'b0c66ff7-511e-41c0-b013-8bfbf6480037',
-      token: '272a8175-c92a-4f69-a9de-d0710b1aa5de'
+      database: 'a1113e0f-0398-4afa-9238-5c79caa933ed',
+      token: '9d8db3b0-29a6-4688-bfbd-d86e34b1a497'
     })
   }
 
